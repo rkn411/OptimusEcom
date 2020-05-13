@@ -6,6 +6,7 @@ import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 
 import com.optimus.framework.base.Base;
+import com.optimus.framework.driverfactory.DriverManager;
 
 public class DriverWait {
 	/**
@@ -36,7 +37,7 @@ public class DriverWait {
 	public static boolean isElementDisplayed(By locator) {
 		for (int itrCount = 1; itrCount <= 60; itrCount++) {
 			try {
-				return Base.driver.findElement(locator).isDisplayed();
+				return DriverManager.getDriver().findElement(locator).isDisplayed();
 			} catch (NoSuchElementException noSuch) {
 
 			} catch (StaleElementReferenceException stale) {

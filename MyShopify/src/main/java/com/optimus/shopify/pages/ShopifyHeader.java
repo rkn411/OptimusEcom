@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import com.optimus.framework.base.Base;
+import com.optimus.framework.driverfactory.DriverManager;
 import com.optimus.framework.utilities.DriverWait;
 
 public class ShopifyHeader extends Base {
@@ -54,7 +55,7 @@ public class ShopifyHeader extends Base {
 		searchTxtField.sendKeys(productName);
 		Assert.assertTrue(DriverWait.isElementDisplayed(getSearchItem(productName)),
 				"Item does not exist with product name " + productName);
-		driver.findElement(getSearchItem(productName)).click();
+		DriverManager.getDriver().findElement(getSearchItem(productName)).click();
 		logger.info(productName + " product is selected from search result");
 		Assert.assertTrue(new ProductTemplatePage().isPageDisplayed(), "Product Template page is not displayed");
 		logger.info("Product template page is displayed");

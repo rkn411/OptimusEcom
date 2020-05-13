@@ -14,14 +14,13 @@ import com.optimus.shopify.pages.ShopifyHeader;
 public class SearchAndAddProductTest extends DriverManager{
 	
 	private ShopifyHeader shopifyHeader;
-	
 	@BeforeClass
 	public void loginApplication() {
 		PasswordPage pwdPage=new PasswordPage();
 		shopifyHeader=pwdPage.loginApplication("idgad");
 	}
 	
-	@Test
+	@Test(invocationCount=1)
 	public void searchProduct() {
 		String productName="RoundNeck Shirt";
 		String quantity="2";

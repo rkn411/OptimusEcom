@@ -25,3 +25,231 @@
 [main] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
 [main] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
 [main] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed
+[main] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[main] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[main] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[main] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[main] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[main] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[main] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[main] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
+[main] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Loggining Application
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.PasswordPage  - Logged in application successfully
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Searching for product RoundNeck Shirt
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - RoundNeck Shirt product is selected from search result
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Waiting for Buy IT Now element to make sure product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ShopifyHeader  - Product template page is displayed
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Item is added to the card successfully
+[TestNG] INFO  com.optimus.shopify.pages.CartPage  - Waiting for continue shopping cart button
+[TestNG] INFO  com.optimus.shopify.pages.ProductTemplatePage  - Cart Item page is displayed

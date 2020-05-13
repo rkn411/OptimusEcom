@@ -6,15 +6,14 @@ import org.openqa.selenium.SessionNotCreatedException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import com.optimus.framework.support.io.PropertiesFile;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 /**
@@ -24,32 +23,38 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  *
  */
 public class DriverManager {
-	private static WebDriver driver;
-	public static String browser;
+
+	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 	public static String baseDir = System.getProperty("user.dir");
 	public static PropertiesFile propFile;
 
 	@BeforeTest
 	public void beforeTest() {
 		String path = baseDir + "/src/main/java/com/optimus/shopify/";
-		propFile = new PropertiesFile(path+"/config/config.properties");
+		propFile = new PropertiesFile(path + "/config/config.properties");
 	}
 
 	/**
-	 * This function launches browser based on browser name given in config
-	 * properties file.
+	 * method to  launch browser and navigate URL based on browser name given in xml
 	 */
+	@Parameters("browser")
 	@BeforeClass
-	public void launchBrowser() {
-		browser = propFile.getProperty("browserName");
-
-		switch (browser.toLowerCase()) {
-		case "ie":
-			WebDriverManager.iedriver().setup();
-			driver = new InternetExplorerDriver();
-			break;
+	public void launchBrowser(String browser) {
+		driver.set(getDriverFor(browser));
+		getDriver().manage().window().maximize();
+		getDriver().manage().deleteAllCookies();
+		getDriver().get(propFile.getProperty("URL"));
+		getDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		getDriver().manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+	}
+/**
+ * method to set driver 
+ * @param brName
+ * @return browser driver
+ */
+	public static WebDriver getDriverFor(String brName) {
+		switch (brName.toLowerCase()) {
 		case "chrome":
-			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("start-maximized");
 			options.addArguments("disable-infobars");
@@ -60,24 +65,18 @@ public class DriverManager {
 			options.addArguments("ignore-certificate-errors");
 			options.setAcceptInsecureCerts(true);
 			options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-			driver = new ChromeDriver(options);
-			break;
+			options.addArguments("--disable-notifications");
+			WebDriverManager.chromedriver().setup();
+			return new ChromeDriver(options);
 		case "firefox":
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
-			break;
-		case "edge":
-			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
-			break;
+			return new FirefoxDriver();
+		// add more browsers list
+			
 		default:
-			Assert.assertTrue(false, "Invalid Choice, plese give valid browser name");
+			System.out.println("No Valid browser found with the name");
+			return null;
 		}
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		driver.get(propFile.getProperty("URL"));
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 	}
 
 	/**
@@ -85,9 +84,9 @@ public class DriverManager {
 	 */
 	@AfterClass
 	public static void closeDriver() {
-		if (driver != null) {
+		if (getDriver() != null) {
 			try {
-				driver.quit();
+				getDriver().quit();
 			} catch (NoSuchMethodError nsme) {
 				nsme.printStackTrace();
 			} catch (NoSuchSessionException nsse) {
@@ -95,16 +94,14 @@ public class DriverManager {
 			} catch (SessionNotCreatedException snce) {
 				snce.printStackTrace();
 			}
-			driver = null;
 		}
 	}
 
 	/**
-	 * Gets driver instance
-	 * 
-	 * @return webdriver instance
+	 *  method to get the driver instance
+	 *
 	 */
 	public static WebDriver getDriver() {
-		return driver;
+		return driver.get();
 	}
 }

@@ -5,9 +5,6 @@
     <classes>
       <class name="com.optimus.shopify.test.SearchAndAddProductTest">
         <methods>
-          <include name="loginApplication"/>
-          <include name="closeDriver"/>
-          <include name="launchBrowser"/>
           <include name="beforeTest"/>
           <include name="searchProduct"/>
         </methods>
