@@ -41,7 +41,7 @@ public class DriverManager {
 	 */
 	@BeforeClass
 	public void launchBrowser() {
-		browser = propFile.getProperty("BrowserName");
+		browser = propFile.getProperty("browserName");
 
 		switch (browser.toLowerCase()) {
 		case "ie":

@@ -43,4 +43,46 @@ public class ShopifyHeader extends Base {
 	public boolean isPageDisplayed() {
 		return DriverWait.isElementDisplayed(cartIcon);
 	}
+	/**
+	 * Search for the product and select product from product list
+	 * 
+	 * @param productName
+	 */
+	public ProductTemplatePage searchProduct(String productName) {
+		logger.info("Searching for product " + productName);
+		searchIcon.click();
+		searchTxtField.sendKeys(productName);
+		Assert.assertTrue(DriverWait.isElementDisplayed(getSearchItem(productName)),
+				"Item does not exist with product name " + productName);
+		driver.findElement(getSearchItem(productName)).click();
+		logger.info(productName + " product is selected from search result");
+		Assert.assertTrue(new ProductTemplatePage().isPageDisplayed(), "Product Template page is not displayed");
+		logger.info("Product template page is displayed");
+		return new ProductTemplatePage();
+	}
+
+	/**
+	 * Click on cart icon in header section
+	 * 
+	 * @return -returns CartPage instance
+	 */
+	public CartPage cartIcon() {
+		cartIcon.click();
+		logger.info("Clicked on cart icon in shopping header");
+		Assert.assertTrue(new CartPage().isPageDisplayed(), "Cart page is not displayed");
+		logger.info("Cart page is displayed");
+		return new CartPage();
+	}
+	
+	/**
+	 * This method get cart items count
+	 * @return
+	 */
+	public int getCartItemCount() {
+		String cartCount=cartItemsCount.getText();
+		if(cartCount.equals("")) {
+			return 0;
+		}
+		return Integer.parseInt(cartCount);
+	}
 }

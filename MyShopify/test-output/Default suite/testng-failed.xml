@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.optimus.shopify.test.SearchAndAddProductTest">
+        <methods>
+          <include name="loginApplication"/>
+          <include name="closeDriver"/>
+          <include name="launchBrowser"/>
+          <include name="beforeTest"/>
+          <include name="searchProduct"/>
+        </methods>
+      </class> <!-- com.optimus.shopify.test.SearchAndAddProductTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

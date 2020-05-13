@@ -16,7 +16,6 @@ public class UtilityMethods {
 	 */
 	public static Select selectOptionFromDropDown(WebElement dropDown,String option,SelectionType type) {
 		Select s=new Select(dropDown);
-		
 		if(type.toString().equalsIgnoreCase("Index")) {
 			s.selectByIndex(Integer.parseInt(option));
 		}else if(type.toString().equalsIgnoreCase("Value")) {
