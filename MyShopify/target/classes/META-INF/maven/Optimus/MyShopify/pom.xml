@@ -44,6 +44,15 @@
 			<artifactId>extentreports</artifactId>
 			<version>2.41.2</version>
 		</dependency>
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+		<!-- Thanks for using https://jar-download.com -->
+
+
+
 		<!-- https://maven.apache.org/plugins/maven-compiler-plugin/dependency-info.html -->
 		<dependency>
 			<groupId>org.apache.maven.plugins</groupId>
@@ -59,7 +68,7 @@
 			<version>3.0.0-M3</version>
 			<type>maven-plugin</type>
 		</dependency>
-		</dependencies>
+	</dependencies>
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>

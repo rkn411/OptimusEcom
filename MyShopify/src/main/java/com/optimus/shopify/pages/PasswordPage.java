@@ -7,6 +7,8 @@ import org.testng.Assert;
 
 import com.optimus.framework.base.Base;
 import com.optimus.framework.utilities.DriverWait;
+import com.optimus.framework.utilities.DriverWait.WaitTime;
+import static com.optimus.framework.utilities.UtilityMethods.*;
 
 public class PasswordPage extends Base {
 
@@ -26,7 +28,7 @@ public class PasswordPage extends Base {
 	@Override
 	public boolean isPageDisplayed() {
 		logger.info("Waiting for password link");
-		return DriverWait.isElementDisplayed(passwordLink);
+		return DriverWait.isElementDisplayed(passwordLink,WaitTime.ONEMINUTE);
 	}
 
 	/**
@@ -37,9 +39,9 @@ public class PasswordPage extends Base {
 	 */
 	public ShopifyHeader loginApplication(String pwd) {
 		logger.info("Loggining Application");
-		passwordLink.click();
-		pwdTxtField.sendKeys(pwd);
-		enterButton.click();
+		clickOnElement(passwordLink, "Password");
+		inputText(pwdTxtField,pwd,"password");
+		clickOnElement(enterButton,"Enter button");
 		Assert.assertTrue(new ShopifyHeader().isPageDisplayed(),
 				"Unable to loggin application, Either password is wrong or home page is not displayed");
 		logger.info("Logged in application successfully");

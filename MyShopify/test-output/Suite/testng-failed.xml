@@ -2,6 +2,23 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
   <parameter name="browser" value="firefox"/>
+  <test name="ChromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.optimus.shopify.test.SearchAndAddProductTest">
+        <methods>
+          <include name="loginApplication"/>
+          <include name="loginApplication"/>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="addFeaturedCollectionProduct"/>
+          <include name="searchProduct"/>
+        </methods>
+      </class> <!-- com.optimus.shopify.test.SearchAndAddProductTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
   <test name="firefoxTest(failed)" parallel="tests">
     <parameter name="browser" value="firefox"/>
     <classes>
@@ -9,12 +26,11 @@
         <methods>
           <include name="loginApplication"/>
           <include name="loginApplication"/>
-          <include name="closeDriver"/>
-          <include name="closeDriver"/>
           <include name="launchBrowser"/>
           <include name="launchBrowser"/>
           <include name="beforeTest"/>
           <include name="beforeTest"/>
+          <include name="addFeaturedCollectionProduct"/>
           <include name="searchProduct"/>
         </methods>
       </class> <!-- com.optimus.shopify.test.SearchAndAddProductTest -->

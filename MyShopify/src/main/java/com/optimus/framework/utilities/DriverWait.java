@@ -2,68 +2,70 @@ package com.optimus.framework.utilities;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
-
-import com.optimus.framework.base.Base;
 import com.optimus.framework.driverfactory.DriverManager;
 
 public class DriverWait {
+	/**
+	 * Holds time constants
+	 *
+	 */
+	public enum WaitTime{
+		ONESECOND(1),
+		TWOSECONDS(2),
+		FIVESECONDS(5),
+		TENSECONDS(10),
+		TWENTYSECONDS(20),
+		FIFTYSECONDS(50),
+		ONEMINUTE(60);
+		
+		private int time;
+		private WaitTime(int time) {
+			this.time=time;
+		}
+		public int getTime() {
+			return this.time;
+		}
+	}
 	/**
 	 * 
 	 * @param element
 	 * @return
 	 */
-	public static boolean isElementDisplayed(WebElement element) {
-		for (int itrCount = 1; itrCount <= 60; itrCount++) {
+	public static boolean isElementDisplayed(WebElement element,WaitTime waitTime) {
+		long before=System.currentTimeMillis();
+		long after=0;
+		do {
 			try {
 				return element.isDisplayed();
 			} catch (NoSuchElementException noSuch) {
-
-			} catch (StaleElementReferenceException stale) {
-
+				after=System.currentTimeMillis();
 			}
-			customSleep(1);
-		}
+		}while(((after-before)/1000)<=waitTime.getTime());
 		return false;
 	}
-
 	/**
 	 * 
 	 * @param locator
 	 * @return
 	 */
 
-	public static boolean isElementDisplayed(By locator) {
-		for (int itrCount = 1; itrCount <= 60; itrCount++) {
+	/**
+	 * 
+	 * @param locator
+	 *            - locator to display in UAT
+	 * @return boolean
+	 */
+	public static boolean isElementDisplayed(By locator,WaitTime waitTime) {
+		long before=System.currentTimeMillis();
+		long after=0;
+		do {
 			try {
 				return DriverManager.getDriver().findElement(locator).isDisplayed();
 			} catch (NoSuchElementException noSuch) {
-
-			} catch (StaleElementReferenceException stale) {
-
+				after=System.currentTimeMillis();
 			}
-			customSleep(1);
-		}
-		return false;
-	}
-
-	/**
-	 * 
-	 * @param element
-	 * @return
-	 */
-	public static boolean isElementEnabled(WebElement element) {
-		if (isElementDisplayed(element)) {
-			int itrCount = 1;
-			do {
-				if (element.isEnabled()) {
-					return true;
-				}
-				customSleep(1);
-				itrCount++;
-			} while (itrCount <= 30);
-		}
+		}while(((after-before)/1000)<=waitTime.getTime());
 		return false;
 	}
 
@@ -80,5 +82,4 @@ public class DriverWait {
 			// TODO Auto-generated catch block
 		}
 	}
-
 }

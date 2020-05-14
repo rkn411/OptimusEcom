@@ -1,5 +1,8 @@
 package com.optimus.framework.driverfactory;
 
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.NoSuchSessionException;
 import org.openqa.selenium.SessionNotCreatedException;
@@ -13,8 +16,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import com.optimus.framework.support.io.PropertiesFile;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 
 /**
  * Manager browser launch and kill activities Load property file and launch
@@ -27,19 +32,36 @@ public class DriverManager {
 	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 	public static String baseDir = System.getProperty("user.dir");
 	public static PropertiesFile propFile;
-
+	static String reportFilePath;
+	public Date date;
+	static Date dte = new Date();
+	static String dateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss").format(dte);
+	static String reportFileName = "Testing_" + dateFormat;
+	public String reportsPath = baseDir + File.separator + "Reports";
+	public static String screenShotFilePath = baseDir + File.separator + "/screenshots/";
+	public String reportConfigPath;
+	public static ExtentReports report;
+	public static ExtentHtmlReporter htmlReporter;
+	public ExtentTest test;
+	public String browser ;
+	
+	
 	@BeforeTest
 	public void beforeTest() {
 		String path = baseDir + "/src/main/java/com/optimus/shopify/";
 		propFile = new PropertiesFile(path + "/config/config.properties");
+		htmlReporter = new ExtentHtmlReporter(reportsPath+File.separator + "ExtentReportResults" + dateFormat +".html");
+        report = new ExtentReports();
+        report.attachReporter(htmlReporter);
 	}
 
 	/**
-	 * method to  launch browser and navigate URL based on browser name given in xml
+	 * method to launch browser and navigate URL based on browser name given in xml
 	 */
 	@Parameters("browser")
 	@BeforeClass
 	public void launchBrowser(String browser) {
+		this.browser=browser;
 		driver.set(getDriverFor(browser));
 		getDriver().manage().window().maximize();
 		getDriver().manage().deleteAllCookies();
@@ -47,11 +69,13 @@ public class DriverManager {
 		getDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		getDriver().manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 	}
-/**
- * method to set driver 
- * @param brName
- * @return browser driver
- */
+
+	/**
+	 * method to set driver
+	 * 
+	 * @param brName
+	 * @return browser driver
+	 */
 	public static WebDriver getDriverFor(String brName) {
 		switch (brName.toLowerCase()) {
 		case "chrome":
@@ -72,7 +96,7 @@ public class DriverManager {
 			WebDriverManager.firefoxdriver().setup();
 			return new FirefoxDriver();
 		// add more browsers list
-			
+
 		default:
 			System.out.println("No Valid browser found with the name");
 			return null;
@@ -83,7 +107,7 @@ public class DriverManager {
 	 * This function closes all browser drivers.
 	 */
 	@AfterClass
-	public static void closeDriver() {
+	public  void closeDriver() {
 		if (getDriver() != null) {
 			try {
 				getDriver().quit();
@@ -95,10 +119,12 @@ public class DriverManager {
 				snce.printStackTrace();
 			}
 		}
+		//report.endTest(test);
+		report.flush();
 	}
 
 	/**
-	 *  method to get the driver instance
+	 * method to get the driver instance
 	 *
 	 */
 	public static WebDriver getDriver() {

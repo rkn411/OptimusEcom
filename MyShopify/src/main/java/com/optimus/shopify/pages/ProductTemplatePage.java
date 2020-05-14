@@ -5,8 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import com.optimus.framework.utilities.DriverWait;
+import com.optimus.framework.utilities.DriverWait.WaitTime;
 import com.optimus.framework.utilities.UtilityMethods;
 import com.optimus.framework.utilities.UtilityMethods.SelectionType;
+import static com.optimus.framework.utilities.UtilityMethods.*;
 
 public class ProductTemplatePage extends ShopifyHeader {
 
@@ -38,7 +40,7 @@ public class ProductTemplatePage extends ShopifyHeader {
 	@Override
 	public boolean isPageDisplayed() {
 		logger.info("Waiting for Buy IT Now element to make sure product template page is displayed");
-		return DriverWait.isElementDisplayed(buyItNowButton);
+		return DriverWait.isElementDisplayed(buyItNowButton,WaitTime.ONEMINUTE);
 	}
 
 	/**
@@ -64,7 +66,7 @@ public class ProductTemplatePage extends ShopifyHeader {
 	 * 
 	 * @param sizeOption
 	 */
-	public void selectSize(String sizeOption) {
+	public void selectProductSize(String sizeOption) {
 		UtilityMethods.selectOptionFromDropDown(sizeDropDown, sizeOption, SelectionType.TEXT);
 	}
 
@@ -82,7 +84,7 @@ public class ProductTemplatePage extends ShopifyHeader {
 	 */
 	public void addItemToCart() {
 		int countBeforeAddingItem = getCartItemCount();
-		addToCartButton.click();
+		clickOnElement(addToCartButton,"add to cart button");
 		DriverWait.customSleep(2);
 		int countAfterAddingItem = getCartItemCount();
 		Assert.assertTrue(countAfterAddingItem > countBeforeAddingItem, "Unable to add item to cart");
@@ -93,7 +95,7 @@ public class ProductTemplatePage extends ShopifyHeader {
 	 * Clicks on View Cart button in pop up and takes to the cart page
 	 */
 	public CartPage clickViewCart() {
-		viewCartButton.click();
+		clickOnElement(viewCartButton, "Cart button");
 		Assert.assertTrue(new CartPage().isPageDisplayed(), "Cart Item page is not displayed");
 		logger.info("Cart Item page is displayed");
 		return new CartPage();

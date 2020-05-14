@@ -8,33 +8,55 @@ import org.openqa.selenium.support.FindBy;
 
 import com.optimus.framework.driverfactory.DriverManager;
 import com.optimus.framework.utilities.DriverWait;
+import com.optimus.framework.utilities.DriverWait.WaitTime;
+import static com.optimus.framework.utilities.UtilityMethods.*;
+
 public class CartPage extends ShopifyHeader {
 	public CartPage() {
 		logger = Logger.getLogger(CartPage.class);
 	}
+
 	@FindBy(xpath = "//div[@class='cart-header']//a[contains(text(),'Continue shopping')]")
 	private WebElement continueShoppingBtn;
 	
-	private String getRow(String productName,String size) {
-		return "//table//tr[.//a[contains(text(),'"+productName+"')]/../following-sibling::ul/li[contains(text(),'"+size+"')]]";
+	private String getProductInfo(String productName,String size) {
+		return "//a[contains(text(),'"+productName+"') and ./../following-sibling::ul/li[contains(text(),'"+size+"')]]";
+	}
+	
+	private String getCartItem(String productName,String size) {
+		return "//table//tr[."+getProductInfo(productName,size)+"]";
+	}
+	
+	private By cartItemProduct(String productName,String size) {
+		return By.xpath(getProductInfo(productName,size));
 	}
 	
 	private By productPrice(String productName,String size) {
-		return By.xpath(getRow(productName,size)+"//td//div[@data-cart-item-regular-price-group]//dd[text()]");
+		return By.xpath(getCartItem(productName,size)+"//td//div[@data-cart-item-regular-price-group]//dd[text()]");
 	}
 	
 	private By quantity(String productName,String size) {
-		return By.xpath(getRow(productName,size)+"//td[contains(@class,'quantity')]//input");
+		return By.xpath(getCartItem(productName,size)+"//td[contains(@class,'quantity')]//input");
 	}
 	
 	private By totalPrice(String productName,String size) {
-		return By.xpath(getRow(productName,size)+"//td[contains(@class,'final-price')]//span");
+		return By.xpath(getCartItem(productName,size)+"//td[contains(@class,'final-price')]//span");
 	}
 	
 	@Override
 	public boolean isPageDisplayed() {
 		logger.info("Waiting for continue shopping cart button");
-		return DriverWait.isElementDisplayed(continueShoppingBtn);
+		return DriverWait.isElementDisplayed(continueShoppingBtn,WaitTime.ONEMINUTE);
+	}
+	
+	/**
+	 * This method verifies whether product available in cart item or not
+	 * @param productName - Takes name of the product
+	 * @param size - Takes name of the size
+	 * @return - returns true if product exist or else returns false
+	 */
+	public boolean isProductAvailableInCardItems(String productName,String size) {
+		return DriverWait.isElementDisplayed(cartItemProduct(productName, size), WaitTime.TENSECONDS);
 	}
 	
 	/**
@@ -56,7 +78,7 @@ public class CartPage extends ShopifyHeader {
 	 */
 	public void enterQuantity(String productName,String size,String quantity) {
 		DriverManager.getDriver().findElement(quantity(productName, size)).clear();
-		DriverManager.getDriver().findElement(quantity(productName, size)).sendKeys(quantity+Keys.TAB);
+		inputText(quantity(productName, size),quantity+Keys.TAB,"quantity");
 	}
 	
 	/**

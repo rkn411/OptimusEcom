@@ -1,48 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="17647" started-at="2020-05-13T17:45:24Z" finished-at="2020-05-13T17:45:42Z">
+  <suite name="Suite" duration-ms="18262" started-at="2020-05-14T08:48:49Z" finished-at="2020-05-14T08:49:07Z">
     <groups>
     </groups>
-    <test name="ChromeTest" duration-ms="11727" started-at="2020-05-13T17:45:24Z" finished-at="2020-05-13T17:45:36Z">
+    <test name="firefoxTest" duration-ms="16223" started-at="2020-05-14T08:48:49Z" finished-at="2020-05-14T08:49:05Z">
       <class name="com.optimus.shopify.test.SearchAndAddProductTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.optimus.shopify.test.SearchAndAddProductTest@2d928643]" name="beforeTest" is-config="true" duration-ms="6" started-at="2020-05-14T01:45:24Z" finished-at="2020-05-14T01:45:24Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.optimus.shopify.test.SearchAndAddProductTest@56235b8e]" name="beforeTest" is-config="true" duration-ms="161" started-at="2020-05-14T16:48:49Z" finished-at="2020-05-14T16:48:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.optimus.shopify.test.SearchAndAddProductTest@2d928643]" name="launchBrowser" is-config="true" duration-ms="3839" started-at="2020-05-14T01:45:24Z" finished-at="2020-05-14T01:45:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loginApplication()[pri:0, instance:com.optimus.shopify.test.SearchAndAddProductTest@2d928643]" name="loginApplication" is-config="true" duration-ms="1078" started-at="2020-05-14T01:45:28Z" finished-at="2020-05-14T01:45:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginApplication -->
-        <test-method status="PASS" signature="searchProduct()[pri:0, instance:com.optimus.shopify.test.SearchAndAddProductTest@2d928643]" name="searchProduct" duration-ms="6629" started-at="2020-05-14T01:45:29Z" finished-at="2020-05-14T01:45:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchProduct -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.optimus.shopify.test.SearchAndAddProductTest@2d928643]" name="closeDriver" is-config="true" duration-ms="111" started-at="2020-05-14T01:45:36Z" finished-at="2020-05-14T01:45:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- com.optimus.shopify.test.SearchAndAddProductTest -->
-    </test> <!-- ChromeTest -->
-    <test name="firefoxTest" duration-ms="17647" started-at="2020-05-13T17:45:24Z" finished-at="2020-05-13T17:45:42Z">
-      <class name="com.optimus.shopify.test.SearchAndAddProductTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.optimus.shopify.test.SearchAndAddProductTest@78c03f1f]" name="beforeTest" is-config="true" duration-ms="6" started-at="2020-05-14T01:45:24Z" finished-at="2020-05-14T01:45:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.optimus.shopify.test.SearchAndAddProductTest@78c03f1f]" name="launchBrowser" is-config="true" duration-ms="6654" started-at="2020-05-14T01:45:24Z" finished-at="2020-05-14T01:45:31Z">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.optimus.shopify.test.SearchAndAddProductTest@56235b8e]" name="launchBrowser" is-config="true" duration-ms="6304" started-at="2020-05-14T16:48:49Z" finished-at="2020-05-14T16:48:56Z">
           <params>
             <param index="0">
               <value>
@@ -53,19 +22,58 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loginApplication()[pri:0, instance:com.optimus.shopify.test.SearchAndAddProductTest@78c03f1f]" name="loginApplication" is-config="true" duration-ms="1101" started-at="2020-05-14T01:45:31Z" finished-at="2020-05-14T01:45:32Z">
+        <test-method status="PASS" signature="loginApplication()[pri:0, instance:com.optimus.shopify.test.SearchAndAddProductTest@56235b8e]" name="loginApplication" is-config="true" duration-ms="1199" started-at="2020-05-14T16:48:56Z" finished-at="2020-05-14T16:48:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApplication -->
-        <test-method status="PASS" signature="searchProduct()[pri:0, instance:com.optimus.shopify.test.SearchAndAddProductTest@78c03f1f]" name="searchProduct" duration-ms="7193" started-at="2020-05-14T01:45:32Z" finished-at="2020-05-14T01:45:39Z">
+        <test-method status="PASS" signature="addFeaturedCollectionProduct()[pri:0, instance:com.optimus.shopify.test.SearchAndAddProductTest@56235b8e]" name="addFeaturedCollectionProduct" duration-ms="5183" started-at="2020-05-14T16:48:57Z" finished-at="2020-05-14T16:49:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addFeaturedCollectionProduct -->
+        <test-method status="PASS" signature="searchProduct()[pri:0, instance:com.optimus.shopify.test.SearchAndAddProductTest@56235b8e]" name="searchProduct" duration-ms="1463" started-at="2020-05-14T16:49:02Z" finished-at="2020-05-14T16:49:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchProduct -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.optimus.shopify.test.SearchAndAddProductTest@78c03f1f]" name="closeDriver" is-config="true" duration-ms="2685" started-at="2020-05-14T01:45:39Z" finished-at="2020-05-14T01:45:42Z">
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.optimus.shopify.test.SearchAndAddProductTest@56235b8e]" name="closeDriver" is-config="true" duration-ms="1905" started-at="2020-05-14T16:49:04Z" finished-at="2020-05-14T16:49:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- com.optimus.shopify.test.SearchAndAddProductTest -->
     </test> <!-- firefoxTest -->
+    <test name="ChromeTest" duration-ms="18262" started-at="2020-05-14T08:48:49Z" finished-at="2020-05-14T08:49:07Z">
+      <class name="com.optimus.shopify.test.SearchAndAddProductTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.optimus.shopify.test.SearchAndAddProductTest@148080bb]" name="beforeTest" is-config="true" duration-ms="161" started-at="2020-05-14T16:48:49Z" finished-at="2020-05-14T16:48:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.optimus.shopify.test.SearchAndAddProductTest@148080bb]" name="launchBrowser" is-config="true" duration-ms="4917" started-at="2020-05-14T16:48:49Z" finished-at="2020-05-14T16:48:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="loginApplication()[pri:0, instance:com.optimus.shopify.test.SearchAndAddProductTest@148080bb]" name="loginApplication" is-config="true" duration-ms="1645" started-at="2020-05-14T16:48:54Z" finished-at="2020-05-14T16:48:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApplication -->
+        <test-method status="PASS" signature="addFeaturedCollectionProduct()[pri:0, instance:com.optimus.shopify.test.SearchAndAddProductTest@148080bb]" name="addFeaturedCollectionProduct" duration-ms="4856" started-at="2020-05-14T16:48:56Z" finished-at="2020-05-14T16:49:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addFeaturedCollectionProduct -->
+        <test-method status="PASS" signature="searchProduct()[pri:0, instance:com.optimus.shopify.test.SearchAndAddProductTest@148080bb]" name="searchProduct" duration-ms="6471" started-at="2020-05-14T16:49:01Z" finished-at="2020-05-14T16:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProduct -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.optimus.shopify.test.SearchAndAddProductTest@148080bb]" name="closeDriver" is-config="true" duration-ms="200" started-at="2020-05-14T16:49:07Z" finished-at="2020-05-14T16:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.optimus.shopify.test.SearchAndAddProductTest -->
+    </test> <!-- ChromeTest -->
   </suite> <!-- Suite -->
 </testng-results>
